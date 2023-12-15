@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulaçãoo de Strings como Listas </title>
+</head>
+
+<body>
+
+    <script>
+
+        // Declaração e inicialização de uma string
+
+        // let texto= "JavaScript";
+
+        // for (let i= 0; i <texto.length; i++){
+        //     console.log ("Caractere na posição" + i + ":" + texto [i]);
+        // }
+
+        // let texto = "JavaScript";
+
+        // for (let i = texto.length - 1; i >= 0; i--) {
+        //     console.log("Caractere na posição " + i + ": " + texto[i]);
+        // }
+
+        let texto= "JavaScript";    
+        let meio = (texto.length / 2);
+
+        for (let i = texto.length - 1; i > meio; i--)
+        console.log ("Caractere na posição" + i + ":" + texto [i]);
+        
+
+        let produtos= ['TV', 'Computador', 'Radio', 'Sofá', 'Cama']
+
+        for (let i = 0; i < produtos.length; i++) { 
+            console.log ("Produtos na posição " + i + ": " + produtos[i]);
+        }
+        
+        console.log ("Primeir item: ", produtos [0]);
+    
+    </script>
+</body>
+
+</html>
