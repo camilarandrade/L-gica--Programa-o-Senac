@@ -49,8 +49,20 @@ function cadastrarVeiculo() {
     veiculos.push(veiculo);
 
     // Atualiza a exibição
-    console.log(veiculos);
+    exibirVeiculos()
 
     // Limpar formulário
-    document.getElementById("veiculoForm").reset();
+    document.getElementById ("veiculoForm").reset();
+}
+
+function exibirVeiculos() {
+    const veiculosList = document.getElementById("veiculosList");
+    // Limpar a lista antes de exibir os veículos
+    veiculosList.innerHTML = "";
+
+    for (let i = 0; i < veiculos.length; i++) {
+        const veiculoItem = document.createElement("li");
+        veiculoItem.innerHTML = veiculos[i].modelo;
+        veiculosList.appendChild(veiculoItem);
+    }
 }
