@@ -40,7 +40,7 @@ function cadastrarVeiculo() {
     const cor = document.getElementById("cor").value;
     const autonomia = parseInt(document.getElementById("autonomia").value);
     const capacidadeTanque = parseInt(document.getElementById("capacidadeTanque").value);
-    const imagemURL = document.getElementById("imagemURL").value;    
+    const imagemURL = document.getElementById("imagemURL").value;
 
     // Instanciar um novo objeto veículo, passando os valores pedidos no construtor
     const veiculo = new Veiculo(marca, modelo, preco, cor, autonomia, capacidadeTanque, imagemURL);
@@ -52,7 +52,7 @@ function cadastrarVeiculo() {
     exibirVeiculos()
 
     // Limpar formulário
-    document.getElementById ("veiculoForm").reset();
+    document.getElementById("veiculoForm").reset();
 }
 
 function exibirVeiculos() {
